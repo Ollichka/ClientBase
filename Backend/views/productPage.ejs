@@ -1,0 +1,37 @@
+<% include common/header.ejs %>
+
+<div class="main-container container-fluid mainFrame">
+    <div class="row chose">
+        <h2><span class="filterName">Усі Піци </span> <span class="num">8</span></h2>
+    </div>
+    <div class="row btn-group select ">
+        <button type="button" id="all" class="btn btn-link ">Усі</button>
+        <button type="button" id='meat' class="btn btn-link">М'ясні</button>
+        <button type="button" id='pineapple' class="btn btn-link">З ананасом</button>
+        <button type="button" id="mushroom" class="btn btn-link">З грибами</button>
+        <button type="button" id="ocean" class="btn btn-link">З морепродуктами</button>
+        <button type="button" id="vega" class="btn btn-link">Вегa</button>
+    </div>
+    <div class="row ">
+        <div class="col-sm-6 col-md-9 mainFramePizza">
+
+        </div>
+        <div class=" col-md-3 orderFrame">
+            <div class="order">
+                <span>Замовлення<span class="num1">0</span></span>
+                <button type="button" class="btn btn-link cl">Очистити взамовлення</button>
+            </div>
+            <div class="pizzaOrder">
+
+            </div>
+            <div class="summ">
+                <div class="pay">Cума замовлення<span class="money"><span class="c">654</span>грн</span></div>
+                <center href="#" class="btn btn-primary ord">Замовити</center>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<% include common/footer.ejs %>
