@@ -7,7 +7,14 @@ var client_info = [
         email: 'salnikova.olia@gmail.com',
         status: 1,
         additional_info:"no info"
-
+    },
+    {
+        id:3 ,
+        name: "Sakova Olia",
+        phone: '0937712481',
+        email: 'salnikova.olia@gmail.com',
+        status: 1,
+        additional_info:"no info"
     }
 ];
 

@@ -1,29 +1,73 @@
-/**
- * Created by chaika on 25.01.16.
- */
+
 
 $(function(){
     //This code will execute when the page is ready
     var PizzaMenu = require('./pizza/PizzaMenu');
-    var PizzaCart = require('./pizza/PizzaCart');
-    var Pizza_List = require('./Pizza_List');
-
+    var MainPage = require('./pizza/MainPage');
     var API = require('./API');
-    API.getPizzaList(function(err,pizza_list){
-        if(err) return console.error(err);
-   console.log("Pizza List",pizza_list);
-    PizzaCart.initialiseCart();
-    PizzaMenu.initialiseMenu();
-    })
+    //console.log(client_list);
 
-    $(".ord").click(function(){
 
-        window.location = "/order.html";
-    })
 
-    $(".edit").click(function(){
-        window.location = "/";
-    })
+    activeHeader();
+
+
+    function timer (){
+        var datetime = {
+            month: [1,2,3,4,5,6,7,8,9,10,11,12],
+            day: ['Неділя', 'Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота'],
+            show: function(node) {
+                var _this = this;
+                setInterval(function() {
+                    var date = new Date();
+                    node.innerHTML = [_this.day[date.getDay()], ', ', date.getDate(), '.', _this.month[date.getMonth()],' ',date.getHours(),':',date.getMinutes()].join('');
+                }, 1000);
+            }
+        };
+        window.onload = function() {
+            datetime.show(document.getElementById('date'));
+        };
+        $(".ord").click(function(){
+            window.location = "/order.html";
+        })
+    }
+
+    function activeHeader(){
+        timer();
+
+        $(".header_product").click(function(){
+            window.location = "/product.html";
+        })
+
+        $(".header_client").click(function(){
+            console.log("click");
+            window.location = "/client.html";
+        })
+
+        $(".header_main").click(function(){
+            window.location = "/";
+        })
+
+
+    }
+
+    if (window.location.pathname === '/') {
+
+        MainPage.initialiseMenu("MAINNNNNNNNNNNNN");
+    }
+    if (window.location.pathname === '/client.html') {
+        API.getClients(function(err,pizza_list) {
+            //console.log(client_list);
+            if (err) return console.error(err);
+            // console.log(pizza_list);
+            //console.log(client_list);
+            PizzaMenu.initialiseMenu(pizza_list);
+        });
+    }
+
+
+
+
 
 
 

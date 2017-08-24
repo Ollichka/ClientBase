@@ -1,16 +1,25 @@
-/**
- * Created by chaika on 09.02.16.
- */
+
 exports.mainPage = function(req, res) {
     res.render('mainPage', {
-        pageTitle: 'Вибір Піци',
-        ShowOrderButton:false
+        pageTitle: 'Головна сторінка'
     });
 };
 
 exports.orderPage = function(req, res) {
     res.render('orderPage', {
-        pageTitle: 'Оформлення Замовлення Піци',
-        ShowOrderButton:true
+        pageTitle: 'Оформлення замовлення'
+    });
+};
+
+exports.clientPage = function(req, res) {
+    res.render('clientPage', {
+        pageTitle: 'Клієнти'
+    });
+};
+
+
+exports.productPage = function(req, res) {
+    res.render('productPage', {
+        pageTitle: 'Продукція'
     });
 };

@@ -1,6 +1,4 @@
-/**
- * Created by ольга on 18.02.2016.
- */
+
 var basil = require('basil.js');
 basil = new basil();
 exports.get = function(key) {

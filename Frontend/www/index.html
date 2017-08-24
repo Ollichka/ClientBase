@@ -15,131 +15,90 @@
 </head>
 <body>
 
-<div class="navbar navbar-fixed-top upFrame">
-    <div class="logo">
-        <div class="title-1"><h3>Pizza</h3></div>
-       <div class="title-2"><h3>KMA</h3></div>
-        <img class="upperdisc" src="assets/images/discount.svg">
-    </div>
-<div class="top-row">
-    <span class="number hidden-xs" >(044) 222 5 222</span>
-    <span class="time hidden-sm hidden-xs">24 години\7 днів на тиждень</span>
-    <span class="del hidden-md hidden-sm hidden-xs">Безкоштовна доставка піци</span>
-    <button type="button" class="btn login">Ввійти</button>
-</div>
-    <div class="down-row">Піцца</div>
-</div>
-<div class="log">
-<img  src="assets/images/discount.svg">
-<div class="downLogo">
-    <div class="title-1--down"><h4><div>Цього</div><div>Тижня</div> <div> На все</div></h4></div>
-    <div class="title-2-down"><h4>-20%</h4></div>
-</div>
-</div>
+<div class="row ">
+    <div class="col-sm-6 col-md-9 formfororder">
+        <div class="main-container  container-fluid">
+            <div class="row order-page-panel">
+                <div class="left-panel">
+                    <div class="contact-form-1">
 
-
-<div class="main-container container-fluid mainFrame">
-    <div class="row chose">
-        <h2>Усі Піци<span class="num">1</span></h2>
-    </div>
-        <div class="row btn-group select ">
-            <button type="button" class="btn btn-link ">Усі</button>
-            <button type="button" class="btn btn-link">М'ясні</button>
-            <button type="button" class="btn btn-link">З анасами</button>
-            <button type="button" class="btn btn-link">З грибами</button>
-            <button type="button" class="btn btn-link">З морепродуктами</button>
-            <button type="button" class="btn btn-link">Вегa</button>
-        </div>
-    <div class="row ">
-        <div class="col-sm-6 col-md-9 mainFramePizza">
-        <!--<div class="col-sm-6 col-md-4">-->
-
-
-            <!--<div class="thumbnail pizza-card">-->
-                <!--<img src="assets/images/pizza_1.jpg">-->
-
-                <!--<div class="caption"><h3>Thumbnail label</h3>-->
-
-                    <!--<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
-
-                    <!--<p>-->
-                        <!--<table class="table">-->
-                        <!--<tbody class="about_pizza">-->
-                        <!--<tr class="sizes"><td> <img src="assets/images/size-icon.svg">30<br><img src="assets/images/weight.svg">370</td>-->
-                        <!--<td> <img src="assets/images/size-icon.svg">40<br><img src="assets/images/weight.svg">660</td></tr>-->
-                        <!--<tr><td><strong>99 грн.</strong></td><td><strong>169 грн.</strong></td></tr>-->
-                        <!--<tr><td>  <button class="btn btn-warning small" type="button">Купити</button></td><td>-->
-                        <!--<button class="btn btn-warning big" type="button">Купити</button></td></tr>-->
-                        <!--</tbody>-->
-                        <!--</table>-->
-                    <!--</p>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="col-sm-6 col-md-4">-->
-            <!--<div class="thumbnail pizza-card">-->
-                <!--<img src="assets/images/pizza_2.jpg">-->
-
-                <!--<div class="caption"><h3>Thumbnail label</h3>-->
-
-                    <!--<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
-
-                    <!--<p>-->
-                        <!--<a href="#" class="btn btn-primary">Button 3</a>-->
-                        <!--<a href="#" class="btn btn-default">Button 4</a>-->
-                    <!--</p>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="col-sm-6 col-md-4">-->
-            <!--<div class="thumbnail pizza-card">-->
-                <!--<img src="assets/images/pizza_3.jpg">-->
-
-                <!--<div class="caption"><h3>Thumbnail label</h3>-->
-
-                    <!--<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
-
-                    <!--<p>-->
-                        <!--<a href="#" class="btn btn-primary">Button 5</a>-->
-                        <!--<a href="#" class="btn btn-default">Button 6</a>-->
-                    <!--</p>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-            </div>
-        <div class=" col-md-3 orderFrame">
-            <div class="order">
-                <span>Замовлення<span class="num1">0</span></span>
-                <button type="button" class="btn btn-link cl">Очистити взамовлення</button>
-            </div>
-            <div class="pizza-order">
-                <span class="prod" >Gvjh</span>
-                <div class="a1">
-                <span class="count">1</span>
-                <button type="button" class="buttonplus">+</button>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <form class="form-horizontal">
+                                    <div class="form-group name-group">
+                                        <label class="col-sm-2 control-label">Ім’я</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" id="inputName" placeholder="Ім’я Прізвище">
+                                        </div>
+                            <span class="name-help-block" style="display:none">
+                                Введіть тільки власне ім’я, без цифр
+                            </span>
+                                    </div>
+                                    <div class="form-group phone-group">
+                                        <label class="col-sm-2 control-label">Телефон</label>
+                                        <div class="col-sm-10">
+                                            <input  class="form-control" type="text" id="inputPhone" placeholder="+380994010999">
+                                        </div>
+                            <span class="phone-help-block" style="display:none">
+                                Введіть номер телефону у форматі +380 або почніть з 0
+                            </span>
+                                    </div>
+                                    <div class="form-group address-group">
+                                        <label class="col-sm-2 control-label">Адреса</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" id="inputAdress" placeholder="Київ, вул. Спаська, 2">
+                                        </div>
+                            <span class="address-help-block" style="display:none">
+                                Введіть адресу доставки піци
+                            </span>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-5 order-summary">
+                                <div class=" bs-callout bs-callout-warning">
+                                    <h4>Інформація про замовлення</h4>
+                                    <p class="order-summery-time">
+                                        <b>Приблизний час доставки:</b> невідомий
+                                    </p>
+                                    <p class="order-summery-adress">
+                                        <b>Адреса доставки:</b> невідома
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group next-step-wrap">
+                                <div class="next-step-width">
+                                    <button  type="button" class="btn btn-warning btn-block next-step-button next">
+                                        Далі
+                                        <i class="glyphicon glyphicon-chevron-right icon-white">
+                                        </i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button type="button" class="notBought">Не купленно</button>
-                <button type="button" class="bought">Куплено</button>
-                <button type="button" class="delete">X</button>
-                <div class="lines"></div>
-                </span>
-
             </div>
-            <div class="summ">
-                <div class="pay">Cума замовлення<span class="money"><span class="c">654</span>грн</span></div>
-                <a href="#" class="btn btn-primary ord">Замовити</a>
-            </div>
+        </div>
+        <div id="googleMap" class="show"></div>
+        <div id="liqpay"></div>
+    </div>
+    <div class=" col-md-3 orderFrame">
+        <div class="order">
+            <span>Замовлення<span class="num1">0</span></span>
+        </div>
+        <div class="pizzaOrder">
 
         </div>
-    </div>
-</div>
-<footer class="downFrame">
-    <p>Pizza.22 - практичний проект в межах курсу JavaScript в Києво-Могилянській Академії</p>
-    <p>Доставка піци не здійснюється</p>
-</footer>
+        <div class="summ">
+            <div class="pay">Cума замовлення<span class="money"><span class="c">654</span>грн</span></div>
+            <center href="#" class="btn btn-primary edit">Редагувати замовлення</center>
+        </div>
 
+    </div>
+
+</div>
 <!-- jQuery JavaScript -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
 
