@@ -6,7 +6,15 @@ var client_info = [
         phone: '0937712481',
         email: 'salnikova.olia@gmail.com',
         status: 1,
-        additional_info:"no info"
+        additional_info:""
+    },
+     {
+        id:2,
+        name: "Пилипченко Андрій",
+        phone: '0937712481',
+        email: 'salnikova.olia@gmail.com',
+        status: 1,
+        additional_info:""
     },
     {
         id:3 ,
@@ -14,7 +22,7 @@ var client_info = [
         phone: '0937712481',
         email: 'salnikova.olia@gmail.com',
         status: 1,
-        additional_info:"no info"
+        additional_info:""
     }
 ];
 
