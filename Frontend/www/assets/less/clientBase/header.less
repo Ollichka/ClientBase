@@ -1,0 +1,41 @@
+.header_top_row {
+  border-style: groove;
+  border-color: @mainColor;
+  border-radius: 1%;
+  background-color: lighten(@mainColor, 10%);
+  padding: 15px;
+
+    .date {
+      display: inline-block;
+      color: white;
+    }
+
+  .button_group {
+    right: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    .header_main {
+      margin-right: 5px;
+      background-color: #fff;
+      border-color: blue;
+      border-style: groove;
+    }
+
+    .header_client {
+      margin-right: 5px;
+      background-color: #fff;
+      border-color: blue;
+      border-style: groove;
+    }
+
+    .header_product {
+      margin-right: 10px;
+      background-color: #fff;
+      border-color: blue;
+      border-style: groove;
+    }
+  }
+}
