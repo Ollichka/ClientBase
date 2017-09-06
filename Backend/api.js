@@ -65,12 +65,9 @@ exports.getProductList = function(req, res) {
 exports.createOrder = function(req, res) {
     var order_info = req.body;
     console.log("Creating Order", order_info);
-    var pizza = "";
-    order_info.pizza.forEach(function(item){
-        pizza += 'Quantity:' + item.quantity+ ', ' + 'size:' + item.size + ',name ' + item.pizza.title + ', price of one: '+item.pizza[item.size].price;
+    db.collection("orders").insert(order_info, function(err, results){
+                console.log(results);
     });
-
-
 
     res.send({
         success: true,

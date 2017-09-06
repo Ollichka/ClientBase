@@ -1,7 +1,61 @@
 <% include common/header.ejs %>
 
 <div class="main-container container-fluid mainFrame">
-<div class="active_orders"></div>
-</div>
+    <div class="row first_line">
+        <div class="col-md-6 active_orders">
+             <div class="text_active_order">Активні замовлення</div>
+                 <div class="one_active_order_cart">
+                     <div class="client">Pulupchenko</div>
+                     <div class="orders">
+                         <div class="item">
+                             <span class="name">Loc 350</span>
+                             <span class="count">6</span>
+                         </div>
+                         <div class="item">
+                             <span class="name">Loc 550</span>
+                             <span class="count">6</span>
+                         </div>
+                     </div>
+                     <div class="price">
+                         <div class="summ">Сума : 360</div>
+                         <div class="ball">Бали : 360</div>
+                     </div>
+                 </div>
 
+            <div class="one_active_order_cart">
+                <div class="client">Pulupchenko</div>
+                <div class="orders">
+                    <div class="item">
+                        <span class="name">Loc 350</span>
+                        <span class="count">6</span>
+                    </div>
+                    <div class="item">
+                        <span class="name">Loc 550</span>
+                        <span class="count">6</span>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="summ">Сума : 360</div>
+                    <div class="ball">Бали : 360</div>
+                </div>
+            </div>
+
+            <div class="btn-group buttons">
+                <button class="btn  download">Завантажити</button>
+                <button class="btn  to_passive">Змінити стан</button>
+            </div>
+        </div>
+        <div class=" col-md-6 birthday">
+            <div class="text_birthday">Дні народження</div>
+        </div>
+
+    </div>
+    <div class="row second_line">
+        <div class="ended_term">
+
+        </div>
+    </div>
+
+
+</div>
 <% include common/footer.ejs %>

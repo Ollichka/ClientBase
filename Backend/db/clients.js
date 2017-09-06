@@ -5,6 +5,7 @@ var clientsSchema = new Schema({
         name            : String,
         phone         : String,
         email          : String,
+        birth          :Date,
         status            : String,
         add_Info        : String
 });

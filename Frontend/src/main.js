@@ -5,7 +5,6 @@ $(function(){
     var PizzaMenu = require('./pizza/PizzaMenu');
     var MainPage = require('./pizza/MainPage');
     var API = require('./API');
-    //console.log(client_list);
 
 
 
@@ -20,7 +19,7 @@ $(function(){
                 var _this = this;
                 setInterval(function() {
                     var date = new Date();
-                    node.innerHTML = [_this.day[date.getDay()], ', ', date.getDate(), '.', _this.month[date.getMonth()],' ',date.getHours(),':',date.getMinutes()].join('');
+                    node.innerHTML = [_this.day[date.getDay()], ', ', date.getDate(), '.', _this.month[date.getMonth()],'.',date.getYear()+1900,' ',date.getHours(),':',date.getMinutes()].join('');
                 }, 1000);
             }
         };
@@ -52,15 +51,11 @@ $(function(){
     }
 
     if (window.location.pathname === '/') {
-
-        MainPage.initialiseMenu("MAINNNNNNNNNNNNN");
+        MainPage.initialiseMenu();
     }
     if (window.location.pathname === '/client.html') {
         API.getClients(function(err,pizza_list) {
-            //console.log(client_list);
             if (err) return console.error(err);
-            // console.log(pizza_list);
-            //console.log(client_list);
             PizzaMenu.initialiseMenu(pizza_list);
         });
     }

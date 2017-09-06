@@ -1,13 +1,17 @@
 <div class="one_active_order_cart">
-    <div class="lines"></div>
-    <%= pizza.title %> (<%= size %>)
-    <div><img src="assets/images/size-icon.svg"><%= pizza[size].size %><img src="assets/images/weight.svg"><%= pizza[size].weight %></div>
-    <div>
-        Ціна:<a class="price"> <%= pizza[size].price %> </a>грн.
-        <button class="btn  minus">-</button>
-        <span class="label "><%= quantity %></span>
-        <button class="btn  plus">+</button>
-        <button class="btn  delete">X</button>
+    <div class="client">order.client</div>
+    <div class="orders">
+        <div class="item">
+            <span class="name">Loc 350</span>
+            <span class="count">6</span>
+        </div>
+        <div class="item">
+            <span class="name">Loc 550</span>
+            <span class="count">6</span>
+        </div>
     </div>
-    <div class="lines"></div>
+    <div class="price">
+        <div class="summ">Сума : 360</div>
+        <div class="ball">Бали : 360</div>
+    </div>
 </div>

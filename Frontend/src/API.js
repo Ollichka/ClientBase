@@ -1,10 +1,12 @@
 
 var API_URL = "http://localhost:5050";
 
-function backendGet(url, callback) {
+function backendGet(url,data, callback) {
     $.ajax({
         url: API_URL + url,
         type: 'GET',
+        contentType : 'application/json',
+        data: JSON.stringify(data),
         success: function(data){
             callback(null, data);
         },
